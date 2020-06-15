@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: httpd
+    ports:
+        - "1234:80"
+    volumes:
+        - ./ojs-3.2.0-3:/var/www/html
+        - ./php-conf:/usr/local/etc/php
+        - ./files:/var/www/files
+  db:
+    image: postgres
+    environment:
+        POSTGRES_PASSWORD: ojs
+    volumes:
+        - ./pg-data:/var/lib/postgresql/data
