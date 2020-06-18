@@ -1,8 +1,6 @@
 # ojs-docker
 Docker compose file to run an OJS site with a PostgreSQL database
 
-## Instructions
+## Usage
 
-Make sure the desired version of the OJS site is in the ojs directory then just start the docker compose by using the following command:
-
-docker-compose up
+Make sure the desired version of the OJS site application is in the ojs directory then just start the docker compose by running 'docker-compose up'
